@@ -27,7 +27,7 @@ const notify = {
     }
   },
 
-  promis : (cf) => {
+  promise : (cf) => {
     new Promise( (solved, reject) => {
       if (cf.cop == true) {
         solved('Copy ' + cf.target + ' Success!');
@@ -159,7 +159,18 @@ function restore() {
 // ---------------------------------------------------------------------------------------------
 // Functin Save Cookie Configuration
 function simpan() {
-  getConfig.save({mode_copy: modeCopy.value, attrib_copy: attribCopy.value});
+  if (modeCopy.value == "") {
+    notify.set({background: false, textNode: "Mode Copy Belum dipilih"});
+    return false;
+  }
+  else if (attribCopy.value == "") {
+    notify.set({background: false, textNode: "Attribute Set Belum dipilih"});
+    return false;
+  }
+  else if (modeCopy.value != "" && attribCopy.value != "") {
+      getConfig.save({mode_copy: modeCopy.value, attrib_copy: attribCopy.value});
+  }
+  
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -191,7 +202,7 @@ function get(el) {
     pass.value  = val_cpMod;
     pass.select()
     const cop   = doc.execCommand('copy');
-    notify.promis({cop: cop, target: slcCls.innerHTML});
+    notify.promise({cop: cop, target: slcCls.innerHTML});
   }
 
   //----------------------------------------------------
@@ -210,7 +221,7 @@ function get(el) {
     pass.value  = val_cpMod;
     pass.select();
     const cop   = doc.execCommand('copy');
-    notify.promis({cop: cop, target: slcs});
+    notify.promise({cop: cop, target: slcs});
   }
 }
 
