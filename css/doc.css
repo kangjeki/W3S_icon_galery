@@ -1,0 +1,33 @@
+body {
+	margin: 0; padding: 0;
+	font-family: serif;
+}
+#container {
+	margin: 0; padding: 20px;
+}
+.code {
+	margin: 0; padding: 5px;
+	overflow: auto;
+	background: #eee;
+	border: 1px #ccc solid;
+}
+#head {
+	margin: 0; padding: 5px;
+	text-align: center;
+	background: #333;
+}
+#head h4, #head p {
+	margin: 0; padding: 0; color: #fff;
+}
+#container h4 {
+	margin: 0; padding:2px 0px;
+}
+#footer {
+	background: #333;
+	text-align: center;
+	margin: 0; padding: 10px;
+}
+#footer p {
+	color: #eee; font-size: 13px;
+	margin: 0; padding: 0;
+}

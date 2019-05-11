@@ -1,0 +1,10 @@
+{
+	"nama" 		: "W3S Icon Galery",
+	"version"	: "v.0.0.1",
+	"table_by"	: "jc_programs",
+	
+	"setting" 	: {
+		"mode_copy" 	: "clas",
+		"attrib_copy"	: "tag"
+	}	
+}

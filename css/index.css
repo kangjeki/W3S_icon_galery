@@ -1,0 +1,90 @@
+
+    body {
+      margin: 0; padding: 0;
+    }
+    #head {
+      margin: 0; padding: 5px; text-align: center;
+      background: #45473d;
+    }
+    #head h4 {
+      margin: 0; padding: 0;
+      color: #fff;
+    }
+    #head .head {
+      display: inline-block;
+    }
+    .head_fix {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    }
+    #container {
+      margin: 0; padding:0px 5px;
+    }
+		table {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		table tr {
+			width: 33%;
+			display: inline-block;
+			font-size: 18px;
+			margin: 0;
+			padding: 0;
+      border-bottom: 1px #606060 solid;
+      border-right: 1px #606060 solid;
+      border-left: 1px #606060 solid;
+		}
+		table tr td {
+			margin: 0;
+			padding: 0;
+      font-size: 15px;
+		}
+		table tr td:nth-child(1) {
+
+			width: 35px;
+		}
+		table tr td:nth-child(2) {
+			width: 280px;
+		}
+    table tr:hover {
+      background: #ddd;
+      cursor: pointer;
+    }
+    button {
+      cursor: pointer;
+    }
+    input {
+      background: #ddd; outline: none;
+    }
+    #footer {
+      background: #333;
+      text-align: center;
+      margin: 0; padding: 10px;
+    }
+    #footer p {
+      color: #eee; font-size: 13px;
+      margin: 0; padding: 0;
+    }
+    .collapse_jc {
+      margin: 0; padding: 10px;
+      position: absolute;
+      border: 1px #ccc solid;
+      border-radius: 5px;
+      top: 30px;
+      right: 10px;
+      height: 70px;
+      width: 200px;
+      background: #eee;
+      box-shadow: 1px 1px 4px #555;
+      text-align: left;
+      overflow: hidden;
+      display: none;
+    }
+    #collapse_jc .label {
+      width: 90px;
+      margin: 0; padding: 0;
+      display: inline-block;
+    }
+    .show {
+      display: block;
+    }
